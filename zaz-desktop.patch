@@ -1,0 +1,18 @@
+--- zaz-0.2.8/extra/zaz.desktop~	2009-08-27 09:51:04.000000000 +0200
++++ zaz-0.2.8/extra/zaz.desktop	2009-08-27 09:51:05.000000000 +0200
+@@ -1,11 +1,9 @@
+ [Desktop Entry]
+-Version=1.0
+ Type=Application
+-Encoding=UTF-8
+ Name=Zaz
+-Comment=Zaz ain't Z***
+-TryExec=zaz
++Comment=An arcade action puzzle game
++Comment[pl]=Zręcznościowa gra logiczna
+ Exec=zaz
+ Categories=Game;LogicGame;
+-Icon=zaz.xpm
+-MimeType=
++Icon=zaz
++# vi: encoding=utf-8
