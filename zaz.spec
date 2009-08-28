@@ -39,7 +39,7 @@ różnych poziomów.
 %patch0 -p1
 %patch1 -p1
 
-# inexistent files 
+# inexistent files
 %{__sed} -i '/mus5.ogg/d' data/Makefile.am
 %{__sed} -i '/levels.list/d' data/Makefile.am
 
