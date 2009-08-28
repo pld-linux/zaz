@@ -1,12 +1,12 @@
 Summary:	An arcade action puzzle game
 Summary(pl.UTF-8):	Zręcznościowa gra logiczna
 Name:		zaz
-Version:	0.2.8
+Version:	0.2.9
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/zaz/%{name}-%{version}.tar.gz
-# Source0-md5:	7509cf2b777ffedf92e801c5d4c5fff0
+# Source0-md5:	74dca44e4d1d9956d551f17759e80a38
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-usless_files.patch
 URL:		http://zaz.sourceforge.net/
@@ -20,6 +20,8 @@ BuildRequires:	libdrm-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libtheora-devel
 BuildRequires:	libvorbis-devel
+BuildRequires:	rpmbuild(macros) >= 1.268
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,6 +39,10 @@ różnych poziomów.
 %patch0 -p1
 %patch1 -p1
 
+# inexistent files 
+%{__sed} -i '/mus5.ogg/d' data/Makefile.am
+%{__sed} -i '/levels.list/d' data/Makefile.am
+
 %build
 %{__aclocal}
 %{__autoconf}
@@ -51,10 +57,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name} --all-name
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog
 %attr(755,root,root) %{_bindir}/zaz
