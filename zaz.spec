@@ -21,7 +21,6 @@ BuildRequires:	libogg-devel
 BuildRequires:	libtheora-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	rpmbuild(macros) >= 1.268
-BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,10 +37,6 @@ różnych poziomów.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-
-# inexistent files
-%{__sed} -i '/mus5.ogg/d' data/Makefile.am
-%{__sed} -i '/levels.list/d' data/Makefile.am
 
 %build
 %{__aclocal}
