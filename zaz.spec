@@ -1,12 +1,12 @@
 Summary:	An arcade action puzzle game
 Summary(pl.UTF-8):	Zręcznościowa gra logiczna
 Name:		zaz
-Version:	0.2.9
+Version:	0.3.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/zaz/%{name}-%{version}.tar.gz
-# Source0-md5:	74dca44e4d1d9956d551f17759e80a38
+# Source0-md5:	d0e625ee9b8d4823955686048ac69d0a
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-usless_files.patch
 URL:		http://zaz.sourceforge.net/
@@ -15,7 +15,7 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	ftgl-devel
+BuildRequires:	ftgl-devel >= 2.1.3
 BuildRequires:	libdrm-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libtheora-devel
@@ -48,7 +48,8 @@ różnych poziomów.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--with-icondir="%{_pixmapsdir}"
 %{__make}
 
 %install
