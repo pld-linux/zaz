@@ -16,10 +16,12 @@ BuildRequires:	SDL_image-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ftgl-devel >= 2.1.3
+BuildRequires:	gettext-devel
 BuildRequires:	libdrm-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libtheora-devel
 BuildRequires:	libvorbis-devel
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
