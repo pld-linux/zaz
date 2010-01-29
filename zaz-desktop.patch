@@ -1,17 +1,17 @@
---- zaz-0.3.0/extra/zaz.desktop~	2009-09-04 22:30:51.000000000 +0200
-+++ zaz-0.3.0/extra/zaz.desktop	2009-10-07 15:08:07.000000000 +0200
+--- zaz-0.3.1/extra/zaz.desktop~	2009-11-02 22:50:40.000000000 +0000
++++ zaz-0.3.1/extra/zaz.desktop	2010-01-29 22:44:29.000000000 +0000
 @@ -1,10 +1,10 @@
  [Desktop Entry]
 -Version=1.0
  Type=Application
  Name=Zaz
 -Comment=Zaz ain't Z***
--TryExec=zaz
 +Comment=An arcade action puzzle game
 +Comment[pl]=Zręcznościowa gra logiczna
+ TryExec=zaz
  Exec=zaz
- Categories=Game;LogicGame;
+-Categories=Game
++Categories=Game;LogicGame;
  Icon=zaz
 -MimeType=
 +# vi: encoding=utf-8
-+
