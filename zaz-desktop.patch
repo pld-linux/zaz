@@ -11,7 +11,7 @@
  TryExec=zaz
  Exec=zaz
 -Categories=Game
-+Categories=Game;LogicGame;
++Categories=Game;ArcadeGame;
  Icon=zaz
 -MimeType=
 +# vi: encoding=utf-8
