@@ -1,12 +1,12 @@
 Summary:	An arcade action puzzle game
 Summary(pl.UTF-8):	Zręcznościowa gra logiczna
 Name:		zaz
-Version:	0.3.1
+Version:	0.3.3
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Games
 Source0:	http://downloads.sourceforge.net/zaz/%{name}-%{version}.tar.gz
-# Source0-md5:	534b78032dd888abe39f482b5707eb4f
+# Source0-md5:	a538fe87780a56b47bc9b792ff6ae388
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-usless_files.patch
 URL:		http://zaz.sourceforge.net/
