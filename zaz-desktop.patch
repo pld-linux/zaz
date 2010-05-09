@@ -1,6 +1,7 @@
---- zaz-0.3.3/extra/zaz.desktop~	2010-02-20 03:04:53.000000000 +0100
-+++ zaz-0.3.3/extra/zaz.desktop	2010-02-22 10:29:57.895696681 +0100
-@@ -1,12 +1,12 @@
+--- zaz-0.7.0/extra/zaz.desktop~	2010-05-01 00:06:55.000000000 +0200
++++ zaz-0.7.0/extra/zaz.desktop	2010-05-09 13:16:18.034800880 +0200
+@@ -1,14 +1,11 @@
+-#!/usr/bin/env xdg-open
  [Desktop Entry]
 -Version=1.0
  Type=Application
@@ -9,10 +10,10 @@
  Comment=Zaz ain't Z***
 +Comment[pl]=Zręcznościowa gra logiczna
  Comment[ru]=Zaz не клон Z***
- TryExec=zaz
+ GenericName[tr]=Top Yok Etme Oyunu
+-TryExec=zaz
  Exec=zaz
--Categories=Game
+-Categories=Game;LogicGame;
 +Categories=Game;ArcadeGame;
  Icon=zaz
 -MimeType=
-+# vi: encoding=utf-8
