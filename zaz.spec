@@ -1,12 +1,12 @@
 Summary:	An arcade action puzzle game
 Summary(pl.UTF-8):	Zręcznościowa gra logiczna
 Name:		zaz
-Version:	0.7.0
+Version:	0.8.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Games
 Source0:	http://downloads.sourceforge.net/zaz/%{name}-%{version}.tar.bz2
-# Source0-md5:	3e1c1e46baec02fa16e71533d657820a
+# Source0-md5:	6a63f986a80b4f4e1852ecf9871e9735
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-usless_files.patch
 URL:		http://zaz.sourceforge.net/
@@ -28,11 +28,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Zaz is an arcade action puzzle game where the objective is to get rid
 of all incoming balls by rearranging their order. Currently it
-includes 18 different levels.
+includes 20 different levels.
 
 %description -l pl.UTF-8
 Zaz to zręcznościowa gra logiczna, w której celem jet pozbycie się
-wszystkich kul zmieniając ich ustawienie. Aktualnie gra zawiera 18
+wszystkich kul zmieniając ich ustawienie. Aktualnie gra zawiera 20
 różnych poziomów.
 
 %prep
