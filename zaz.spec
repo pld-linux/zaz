@@ -28,7 +28,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Zaz is an arcade action puzzle game where the objective is to get rid
 of all incoming balls by rearranging their order. Currently it
-includes 20 different levels.
+includes 23 different levels.
 
 %description -l pl.UTF-8
 Zaz to zręcznościowa gra logiczna, w której celem jet pozbycie się
