@@ -8,14 +8,8 @@ License:	GPL v3+
 Group:		X11/Applications/Games
 Source0:	http://downloads.sourceforge.net/zaz/%{name}-%{version}.tar.bz2
 # Source0-md5:	d92a043780d06c699da0ba04aab32a6b
-Source1:	bonus1.png
-Source2:	bonus2.png
-Source3:	bonus3.png
-Source4:	bonus4.png
-Source5:	bonus5.png
-Source6:	logo.png
-Source7:	doc.html
-Source8:	screen_mini.jpg
+Source1:	%{name}-docs.tar.gz
+# Source1-md5:	c1d35b69edf80bab01262ca272405181
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-usless_files.patch
 URL:		http://zaz.sourceforge.net/
@@ -50,7 +44,7 @@ wszystkich kul zmieniając ich ustawienie. Aktualnie gra zawiera 23
 różnych poziomów.
 
 %prep
-%setup -q
+%setup -q -a 1
 %patch0 -p1
 %patch1 -p1
 
@@ -69,10 +63,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# install docs
 install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-install AUTHORS ChangeLog \
-	%{SOURCE1} %{SOURCE2} %{SOURCE3} %{SOURCE4} %{SOURCE5} %{SOURCE6} %{SOURCE7} %{SOURCE8} \
-	$RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
+install AUTHORS ChangeLog docs/* $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 
 %find_lang %{name} --all-name
 
