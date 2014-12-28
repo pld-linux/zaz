@@ -19,7 +19,7 @@ BuildRequires:	SDL_image-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ftgl-devel >= 2.1.3
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	libdrm-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libtheora-devel
