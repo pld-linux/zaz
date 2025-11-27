@@ -50,7 +50,7 @@ różnych poziomów.
 %patch -P1 -p1
 
 %build
-%{__aclocal}
+%{__aclocal} -Im4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
