@@ -3,7 +3,7 @@ Summary(hu.UTF-8):	Akció-kirakó játék
 Summary(pl.UTF-8):	Zręcznościowa gra logiczna
 Name:		zaz
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications/Games
 Source0:	https://downloads.sourceforge.net/zaz/%{name}-%{version}.tar.gz
